@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>withdraw</title>
+  <style>
+    *{
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+    }
+    body{
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .container{
+      border-radius: 10px;
+      padding: 30px;
+      background-color: aqua;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .withdraw-function{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+    }
+    .withdraw-title{
+      display: flex;
+      justify-content: center;
+    }
+
+    .withdraw-title   .withdraw-title1{
+      font-size: 20px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: rgb(12, 12, 254);
+    }
+    .withdraw-title   .withdraw-title2{
+      font-size: 20px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: rgb(12, 1, 0);
+    }
+
+    .withdraw-input-amount input{
+      margin-top: 10px;
+      border: 0px ;
+      padding: 10px;
+      outline: none;
+      font-size: 20px;
+    }
+
+    ::placeholder{
+      color: red;
+      font-size: 20px;
+    }
+
+    .withdraw-btn{
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .withdraw-btn button{
+      border: none;
+      padding: 7px;
+      color: blue;
+      font-size: 14px;
+      background-color: white;
+      border: 2px solid red;
+      border-radius: 10px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    .withdraw-btn button:hover{
+      background-color: blue;
+      color: white;
+    }
+
+    .with-display{
+      width: 300px;
+
+   
+    }
+    .with-display-title{
+      font-weight: 300;
+      display: flex;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+
+    .display-amount-status{
+      font-size: 16px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      background-color: rgb(254, 253, 251);
+      padding: 5px 10px;
+      border-radius: 6px;
+    }
+   
+    .status{
+      color: blue;
+    }
+    .amount{
+      color: red;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="withdraw-function">
+       <div class="withdraw-title">
+        <p class="withdraw-title1">Withdraw Amount : </p>
+        <p class="withdraw-title2">560</p>
+       </div>
+       <div class="withdraw-input-amount">
+         <input class="user-amount" type="number" placeholder="Enter amount">
+         <div class="user-problem">
+          
+         </div>
+       </div>
+       <div class="withdraw-btn">
+         <button class="withdraw-click">Withdraw</button>
+       </div>
+    </div>
+
+
+    <div class="with-display">
+       <div class="with-display-title">
+        <p class="display-title1">Transaction</p>
+        <p class="display-title2"> History</p>
+       </div>
+
+        <div class="display-withdraw">
+        <!-- <div class="display-amount-status">
+        
+         <div class="amount-display">
+           <p>Amount</p>
+           <p class="amount">200$</p>
+         </div>
+         <div class="status-display">
+           <p>Status</p>
+           <p class="status">Pending</p>
+         </div>
+        </div> -->
+      </div>
+
+    </div>
+  </div>
+</body>
+<script src="./index.js"></script>
+</html>
