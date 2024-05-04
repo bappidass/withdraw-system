@@ -35,13 +35,20 @@ withdraw_click.addEventListener('click',()=>{
       user_amount='';
       setTimeout(changevalue,2000);
     }else{
+
+      let time=(new Date());
+
       withdrable.innerHTML-=user_amount;
       
       document.querySelector('.display-withdraw').innerHTML+=`<div class="display-amount-status">
         
       <div class="amount-display">
         <p>Amount</p>
-        <p class="amount">${user_amount}₹</p>
+        <p class="amount">- ${user_amount}₹</p>
+      </div>
+      <div class="time-display">
+      <p>Date/time</p>
+      <p class="time" style="font-size: 11px;">${time.toLocaleString()}</p>
       </div>
       <div class="status-display">
         <p>Status</p>
@@ -52,3 +59,5 @@ withdraw_click.addEventListener('click',()=>{
     }
     user_amount='';
 });
+
+
